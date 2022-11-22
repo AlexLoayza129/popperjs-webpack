@@ -7,10 +7,30 @@
     <title>Documento para probar las dependencias del CRM</title>
 </head>
 <body>
-    <div id="popcorn" aria-describedby="tooltip"></div>
-    <div id="tooltip" role="tooltip">
-      <span>My tooltip</span>
-      <div id="arrow" data-popper-arrow></div>
-    </div>
+  <div style="padding: 0 !important;margin:0 !important;min-width: 100vw;height:100vh;gap:0 !important;position: relative;">
+      <ul id="menu" style="background-color: #ffffff;position: absolute;left: -110px;top:-125px;padding: 16px;width: 15%;min-height: 100vh;">
+        <li class="mm-active" style="list-style: none;">
+          <a href="#" aria-expanded="true" style="text-decoration: none;color:black;">Menu 1</a>
+          <ul>
+            Submenu 1
+          </ul>
+        </li>
+        <li style="list-style: none;">
+          <a href="#" aria-expanded="false" style="text-decoration: none;color:black;">Menu 2</a>
+          <ul>
+             Submenu 2
+          </ul>
+        </li>
+        </ul>
+        <div style="margin-left: 20%;">
+          <div id="popcorn" aria-describedby="tooltip"></div>
+          <div id="tooltip" role="tooltip">
+              <span>My tooltip</span>
+            <div id="arrow" data-popper-arrow></div>
+          </div>
+        </div>
+  </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/metismenujs/dist/metismenujs.min.js"></script>
 </body>
 </html>

@@ -1,7 +1,11 @@
 import './css/style.css';
-import './js/popup'
+import jQuery from "jquery";
+import './js/popup';
+import './css/mentismenu.css'
 
 import { createPopper } from '@popperjs/core';
+import MetisMenu from 'metismenujs';
+
 
 const popcorn = document.querySelector('#popcorn');
 const tooltip = document.querySelector('#tooltip');
@@ -17,3 +21,5 @@ createPopper(popcorn, tooltip, {
     },
   ],
 });
+
+MetisMenu.attach('#menu');
