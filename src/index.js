@@ -1,4 +1,6 @@
-import './style.css';
+import './css/style.css';
+import './js/popup'
+
 import { createPopper } from '@popperjs/core';
 
 const popcorn = document.querySelector('#popcorn');
